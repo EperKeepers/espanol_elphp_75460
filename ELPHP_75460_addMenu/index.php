@@ -38,15 +38,18 @@
                 <label for="menuDescription" class="font-weight-bold" style="font-size: 20px">Menu Description</label>
                 <input type="text" class="form-control" id="menuDescription" placeholder="Enter menu description" name="menuDescription">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" style="margin-right: 5px;">Submit</button>
+            <button type="update" class="btn btn-primary" style="margin-right: 5px;">Update</button>
+            <button type="delete" class="btn btn-primary" style="background-color: red; color: white; border: 1px solid red;">Delete</button>
         </form>
     </div>
+
 
     <?php
     $servername = "localhost";
     $username = "root";
-    $password = ""; // if you have set a password for the 'root' user, replace the empty string with your password
-    $database = "elphp_espanol"; // your database name
+    $password = "";
+    $database = "elphp_espanol"; 
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $database);
